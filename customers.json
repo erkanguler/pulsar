@@ -1,0 +1,51 @@
+[{
+        "fname": "Emma",
+        "lname": "Andersson",
+        "email": "emma@pulsar.com"
+    },
+    {
+        "fname": "Anna",
+        "lname": "Gustafsson",
+        "email": "anna@pulsar.com"
+    },
+    {
+        "fname": "Sara",
+        "lname": "Svensson",
+        "email": "sara@pulsar.com"
+    },
+    {
+        "fname": "Stefan",
+        "lname": "Nilsson",
+        "email": "stefan@pulsar.com"
+    },
+    {
+        "fname": "Palle",
+        "lname": "Eriksson",
+        "email": "palle@pulsar.com"
+    },
+    {
+        "fname": "Johan",
+        "lname": "Larsson",
+        "email": "johan@pulsar.com"
+    },
+    {
+        "fname": "Martin",
+        "lname": "Persson",
+        "email": "martin@pulsar.com"
+    },
+    {
+        "fname": "Oscar",
+        "lname": "Johansson",
+        "email": "oscar@pulsar.com"
+    },
+    {
+        "fname": "Emil",
+        "lname": "Olsson",
+        "email": "emil@pulsar.com"
+    },
+    {
+        "fname": "Per",
+        "lname": "Karlsson",
+        "email": "per@pulsar.com"
+    }
+]

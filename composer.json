@@ -1,0 +1,11 @@
+{
+    "name": "erkan/pulsar",
+    "description": "pulsar",
+    "autoload": {
+        "psr-4": {
+            "Erkan\\App\\": "src/"
+        },
+        "files": ["src/functions.php"]
+    },
+    "require": {}
+}
