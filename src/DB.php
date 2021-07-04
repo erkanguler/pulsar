@@ -29,7 +29,7 @@ class DB
         } catch (PDOException $e) {
             http_response_code(500);
             $errMsg = 'Error: Database connection could not be established.';
-            logError(__LINE__, __FILE__, $errMsg);
+            logError(__LINE__, __FILE__, $e->getMessage());
             die($errMsg);
         }
     }

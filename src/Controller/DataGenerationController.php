@@ -16,7 +16,7 @@ class DataGenerationController extends AbstractController
 
     public function index()
     {
-        return $this->render('dataGeneration', ['h1' => 'Data generation']);
+        return $this->render('dataGeneration', ['h1' => 'Data generation', 'title' => 'Data generation']);
     }
 
     public function generatedata()

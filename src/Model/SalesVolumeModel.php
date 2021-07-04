@@ -26,14 +26,14 @@ class SalesVolumeModel
         try {
             $sql = "
             SELECT
-                CONCAT(DATE_FORMAT(`purchased_ad`, '%b'), ' ', DAYOFMONTH(`purchased_ad`)) AS date,
+                CONCAT(DATE_FORMAT(`purchased_ad`, '%y'), ' ',DATE_FORMAT(`purchased_ad`, '%b'), ' ', DAYOFMONTH(`purchased_ad`)) AS date,
                 COUNT(DISTINCT `customer_id`) as unique_customers,
                 COUNT(DISTINCT order_id) as num_of_orders,
                 SUM(price) as revenue
             FROM order_item oi, orders o
             WHERE oi.order_id = o.id
             AND `purchased_ad` BETWEEN '{$fromDate}' and DATE_ADD('{$toDate}', INTERVAL 1 DAY)
-            GROUP BY DAY(purchased_ad)";
+            GROUP BY YEAR(purchased_ad), MONTH(purchased_ad), DAY(purchased_ad)";
 
             $stm = $this->pdo->query($sql);
             $data = $stm->fetchAll(PDO::FETCH_ASSOC);

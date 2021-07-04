@@ -28,7 +28,7 @@ class DashboardController extends AbstractController
             return $this->getSalesVolumeData($fromDate, $toDate);
         }
 
-        return $this->render('dashboard');
+        return $this->render('dashboard', ['title' => 'Dashbord']);
     }
 
     private function getSalesVolumeData($fromDate, $toDate)

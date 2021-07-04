@@ -13,6 +13,6 @@ class IndexController extends AbstractController
 
     public function index()
     {
-        return $this->render('index', ['welcome' => 'Welcome to our website!']);
+        return $this->render('index', ['welcome' => 'Welcome to our website!' ,'title' => 'Home']);
     }
 }
